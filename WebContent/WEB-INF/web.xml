@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>FlyAway</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>login_database</servlet-name>
+  <servlet-class>com.flyaway.Login</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>login_database</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>signup_database</servlet-name>
+  <servlet-class>com.flyaway.SignUp</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>signup_database</servlet-name>
+  <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>change</servlet-name>
+  <servlet-class>com.flyaway.ChangePassword</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>change</servlet-name>
+  <url-pattern>/changepassword</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>flight</servlet-name>
+  <servlet-class>com.flyaway.Search</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>flight</servlet-name>
+  <url-pattern>/flight_details</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
